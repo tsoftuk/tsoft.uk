@@ -84,26 +84,57 @@ footer {
   padding: 1em 0;
 }
 
+/* Navigation Styling */
+.nav-links {
+  list-style: none;
+  display: flex; /* Ensure links are in a row */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer; /* Ensures it's clickable */
+}
+
 /* Responsive Styling */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 100%;
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #333; /* Background for mobile menu */
+    position: absolute; /* Position menu */
+    top: 60px; /* Below the header */
     left: 0;
-    width: 100%;
+    width: 100%; /* Full width */
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex; /* Show links when active */
   }
 
   .hamburger {
-    display: block;
+    display: block; /* Show hamburger icon on small screens */
   }
 }
+
 /* Card Section */
 .cards {
   display: flex;
