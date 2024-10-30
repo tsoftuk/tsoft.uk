@@ -163,3 +163,14 @@ footer {
     max-width: 500px;
   }
 }
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 8px; /* Spacing between logo and company name */
+}
