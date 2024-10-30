@@ -234,3 +234,21 @@ footer {
   height: auto;
   margin-right: 8px; /* Spacing between logo and company name */
 }
+/* Button Styles */
+button {
+  background: #5cb85c; /* Green background for buttons */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button a {
+  color: white; /* Ensure button text is white */
+  text-decoration: none; /* Remove underline */
+}
+
+button:hover {
+  background: #4cae4c; /* Darker green on hover */
+}
