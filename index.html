@@ -1,6 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TSoft | Dedicated to great things</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  Hello, this is a test.
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo">TSoft</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Our Projects</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>TSoft is a British software development company.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Our Projects</h2>
+      <p>Explore some of our recent work and projects.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out to us!</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 TSoft. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
+</html>
