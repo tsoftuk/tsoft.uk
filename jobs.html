@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs - TSoft</title>
+  <link rel="icon" href="tfav.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="tfav.png" alt="TSoft Logo" class="logo-img">
+        <h1>TSoft</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="jobs.html">Work with Us</a></li> <!-- Updated Link -->
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="jobs">
+      <h2>Join Our Team</h2>
+      <p>At TSoft, we’re always looking for talented individuals to join our team. Here are our current job openings:</p>
+      
+      <h3>Current Openings</h3>
+      <ul>
+        <li>
+          <h4>SysRIP Developer</h4>
+          <p>Location: Remote</p>
+          <p>Requirements: Advanced Batch knowledge</p>
+          <button><a href="apply.html">Apply Now</a></button>
+        </li>
+        <li>
+          <h4>Project Manager</h4>
+          <p>Location: On-site</p>
+          <p>Oversee projects from start to finish, manage timelines, and ensure client satisfaction.</p>
+          <button><a href="apply.html">Apply Now</a></button>
+        </li>
+        <li>
+          <h4>UI/UX Designer</h4>
+          <p>Location: Hybrid</p>
+          <p>Create user-friendly designs, conduct user research, and collaborate with developers.</p>
+          <button><a href="apply.html">Apply Now</a></button>
+        </li>
+      </ul>
+      
+      <p>If you’re interested in applying for any of the positions above, please reach out through our contact page or use the application link.</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 TSoft. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
