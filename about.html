@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - TSoft</title>
+  <link rel="icon" href="tfav.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="tfav.png" alt="TSoft Logo" class="logo-img">
+        <h1>TSoft</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to TSoft! We are dedicated to providing top-quality solutions for our clients through innovation and expertise.</p>
+      <p>Our team is passionate about delivering technology solutions that drive success.</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 TSoft. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
